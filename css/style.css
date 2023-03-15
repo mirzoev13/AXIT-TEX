@@ -1,0 +1,72 @@
+/*font-family: 'Open Sans', sans-serif; font-family: 'Raleway', sans-serif;*/
+
+:root{
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Raleway', sans-serif;
+    --color_black: #000;
+    --color_accent: #FF8B38;
+    --color_gray: #CCCCCC;
+    --color_white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* a{
+    text-decoration: none;
+}
+header{
+    height: 90px;
+    background-color: var(--color_black);
+}
+header section{
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+header section .logo{
+    font-family: var(--font1);
+    color: var(--color_white);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 200%;
+    padding: 1vh;
+}
+header section .logo span{
+    color: var(--color_accent);
+    font-family: var(--font2);
+    font-size: 100%;
+    font-weight: 100;
+}
+header section nav ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+header section nav ul li a {
+    font-family: var(--font1);
+    color: var(--color_gray);
+    transition: ease 1.2s all;
+}
+header section nav ul a{
+    display: block;
+    text-align: center;
+}
+
+header section nav ul a:hover{
+    color: var(--color_accent);
+    transition: 0.2s;
+    transform: scale(1.4);
+}
+
+header .main{
+    margin: 0;
+    background-image: url(../img/hero-bg.jpg);
+}
+
+header .main .text_main{
+    margin: 0 40%;
+}
